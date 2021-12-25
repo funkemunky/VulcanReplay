@@ -4,7 +4,7 @@
   <groupId>me.justindevb</groupId>
   <artifactId>VulcanReplay</artifactId>
   <name>VulcanReplay</name>
-  <version>1.6</version>
+  <version>2.0</version>
   <url>http://maven.apache.org</url>
   <build>
     <defaultGoal>clean package install</defaultGoal>
@@ -63,7 +63,7 @@
     <dependency>
       <groupId>org.spigotmc</groupId>
       <artifactId>spigot-api</artifactId>
-      <version>1.17.1-R0.1-SNAPSHOT</version>
+      <version>1.18.1-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
       <exclusions>
         <exclusion>
@@ -107,6 +107,18 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
+      <groupId>dev.brighten.kauri</groupId>
+      <artifactId>API</artifactId>
+      <version>2.12.0</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>cc.funkemunky.utils</groupId>
+      <artifactId>Atlas</artifactId>
+      <version>1.9</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
       <groupId>me.frap.vulcan.api</groupId>
       <artifactId>VulcanAPI</artifactId>
       <version>1.0</version>
@@ -119,6 +131,20 @@
       <version>1.7</version>
       <scope>system</scope>
       <systemPath>C:\Users\suckm\OneDrive\NerdStuff\plugins for later\AdvancedReplay.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>matrix</groupId>
+      <artifactId>matrix</artifactId>
+      <version>1</version>
+      <scope>system</scope>
+      <systemPath>C:\Users\Justin\Desktop\DebugServer\plugins\Matrix.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>godseye</groupId>
+      <artifactId>godseye</artifactId>
+      <version>1</version>
+      <scope>system</scope>
+      <systemPath>C:\Users\Justin\Desktop\DebugServer\plugins\GodsEyeAPI.jar</systemPath>
     </dependency>
   </dependencies>
   <properties>

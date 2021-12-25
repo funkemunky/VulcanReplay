@@ -16,6 +16,7 @@ public class SpartanListener extends ListenerBase implements Listener {
 
 	public SpartanListener(VulcanReplay vulcanReplay) {
 		super(vulcanReplay);
+		Bukkit.getPluginManager().registerEvents(this, VulcanReplay.getInstance());
 	}
 
 	@Override
@@ -37,12 +38,10 @@ public class SpartanListener extends ListenerBase implements Listener {
 
 		alertList.add(p.getName());
 
-		final String replayName = p.getName() + "-" + event.getHackType().toString() + "-" + getTimeStamp();
-
-		startRecording(p, replayName);
+		startRecording(p, getReplayName(p, event.getHackType().toString()));
 	}
 
-	@EventHandler
+	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onPunish(PlayerViolationCommandEvent event) {
 		final Player p = event.getPlayer();
 
